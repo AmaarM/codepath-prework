@@ -98,6 +98,7 @@ function guess(btn) {
     //Additional condition to end game if 3 strikes were given.
     if(mistakes == 3){
         loseGame();
+        return;
     }
    
     //Added to end game when times played > 8.
