@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Light and Sound Memory Game</title>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- The wrapper and content divs set margins and positioning -->
+    <div class="wrapper">
+      <div class="content" role="main">
+        <!-- This is the start of content for our page -->
+        <h1>Light and Sound Memory Game</h1>
+
+        <!-- Instructions on using this project -->
+        <div class="instructions">
+          <p>Welcome to the <strong>Light and Sound Memory Game!</strong></p>
+          <p>Hit the panels in order to <strong>Win</strong>!</p>
+          <p>If you guess wrong 3 times, you're <strong>OUT!</strong></p>
+
+          <!--Start Button & End Button-->
+          <button id="startBtn" onclick="startGame()">Start</button>
+          <button id="endBtn" class="hidden" onclick="stopGame()">End</button>
+          
+          <p>Strikes:<span id="mistakes"> 0 </span></p>
+
+          <!-- Game Button's -->
+          <div id="gameButtonArea">
+            <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+            <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+            <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+            <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+            <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"></button>
+            <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
